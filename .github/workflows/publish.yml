@@ -47,7 +47,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=ref,event=workflow_dispatch
+            type=edge
             type=schedule,pattern={{date 'YYYY'}}
             type=schedule,pattern={{date 'YYYYMM'}}
             type=schedule,pattern={{date 'YYYYMMDD'}}
